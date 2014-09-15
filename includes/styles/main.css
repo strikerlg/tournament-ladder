@@ -1,0 +1,481 @@
+/**********
+*  This CSS document is arranged by
+*  the different sections of the
+*  webpage.
+*
+*  Table of Contents:
+*
+*  General Settings
+*  Header
+*  Body
+*   - Navigation
+*   - Sidebar
+*   - Main Content
+*  Footer
+**********/
+
+/*--- General Settings ---*/
+html, body
+{
+   background: url("../images/graphics/mainbg.png") no-repeat #141416;
+   background-position: center 25px;
+   color: #fff;
+   font-family: Arial, Verdana, sans-serif;
+   font-size: 10pt;
+   height: 100%;
+}
+p
+{
+   font-size: 10pt;
+}
+a
+{
+   color: #cc9900;
+}
+a:link, a:visited, a:active
+{
+   color: #cc9900;
+   text-decoration: none;
+}
+a:hover
+{
+   cursor: pointer;
+   text-decoration: underline;
+}
+#container
+{
+   height: 100%;
+   position: relative;
+   
+}
+.floatLeft
+{
+   float: left;
+}
+.floatRight
+{
+   float: right;
+}
+.left
+{
+   margin: 5px;
+}
+.clearFloat
+{
+   clear: both;
+}
+.red
+{
+   color: #ff0000;
+}
+.grey
+{
+   color: #373740;
+}
+.lightgrey
+{
+   color: #44444f;
+}
+.small
+{
+   font-size: 8pt;
+}
+.center
+{
+   margin: auto;
+}
+.centerText
+{
+   text-align: center;
+}
+.indent
+{
+   margin-left: 15px;
+}
+.error
+{
+   color: #ff0000;
+   display: none;
+}
+.italic
+{
+   font-style: italic;
+}
+.input
+{
+   background: #33353c;
+   border: 1px solid #0b0b0b;
+   color: #787878;
+   height: 25px;
+   margin: 0;
+   width: 132px;
+}
+.inputButton
+{
+   background: url("../images/graphics/buttonbg.png") no-repeat;
+   border: 1px solid #0b0b0b;
+   border-radius: 3px;
+   color: #ffffff;
+   font-size: 9pt;
+   height: 22px;
+   text-transform: uppercase;
+   width: 80px;
+
+}
+.inputButtonDisabled
+{
+   background: url("../images/graphics/buttonbg_disabled.png") no-repeat;
+   border: 1px solid #0b0b0b;
+   border-radius: 3px;
+   color: #d0d0d0;
+   font-size: 9pt;
+   height: 22px;
+   text-transform: uppercase;
+   width: 80px;
+}
+.inputButton:hover
+{
+   cursor: pointer;
+   text-decoration: underline;
+}
+.inputButton:active
+{
+   background: url("../images/graphics/buttonbg_pressed.png") no-repeat;
+}
+/*--- End General Settings ---*/
+
+/*--- Header ---*/
+#headerBar
+{
+   background: url("../images/graphics/header/gradient1.png") repeat-x;
+   border-bottom: 1px solid #0b0b0b;
+   height: 30px;
+}
+#headerBar p
+{
+   padding: 8px 20px 0 0;
+}
+#headerBarButtons
+{
+   margin: 5px 5px 0 0;
+}
+#headerTitle
+{
+   background: url("../images/graphics/header/titlebg.png") no-repeat top left;
+   height: 80px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 292px;
+}
+#headerTitle img
+{
+   margin: 3px 0 0 2px;
+}
+#headerBarLogin
+{
+   height: 105px;
+   position: absolute;
+   overflow: hidden;
+   right: 0;
+   top: 0;
+   width: 272px;
+   visibility: hidden;
+   
+}
+#headerLogin
+{
+   background: url("../images/graphics/header/loginbg.png") no-repeat;
+   height: 105px;
+   position: absolute;
+   right: 0;
+   top: -105px;
+   width: 334px;
+   visibility: visible;
+}
+#headerLogin form
+{
+   float: right;
+   margin: 0 82px 0 0;
+   width: 150px;
+}
+#headerLogin .input.loginUser
+{
+   background: url("../images/graphics/login/user.png") 3px no-repeat #33353c;
+   padding: 0 0 0 18px;
+}
+#headerLogin .input.loginPass
+{
+   background: url("../images/graphics/login/lock.png") 3px no-repeat #33353c;
+   padding: 0 0 0 18px;
+}
+#headerLogin .inputContainer
+{
+   float: right;
+   margin: 5px 15px 0 0;
+   text-align: center;
+   width: 150px;
+}
+/*--- End Header ---*/
+
+/*--- Body ---*/
+#body
+{
+   background: #22232a;
+   bottom: 0;
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
+   min-height: 75%;
+   left: 50%;
+   margin-left: -400px;
+   position: absolute;
+   width: 800px;
+}
+.widget
+{
+   margin-bottom: 10px;
+   position: relative;
+}
+.widgetContentSection
+{
+   padding: 5px;
+}
+.widgetContentSection p
+{
+   padding: 0 0 5px 0;
+}
+.widgetContentSection .separator
+{
+   height: 2px;
+   position: absolute;
+   vertical-align: middle;
+   width: 250px;
+}
+.widgetTitle
+{
+   background: url("../images/graphics/body/titlebg.png") repeat-x;
+   border-bottom: 1px solid #0b0b0b;
+   height: 25px;
+   position: relative;
+}
+.widgetTitle .goldband
+{
+   height: 31px;
+   width: 48px;
+   position: absolute;
+   right: -1px;
+   top: -3px;
+}
+.widgetTitle h2
+{
+   font-size: 11pt;
+   padding: 4px 0 0 5px;
+   text-transform: uppercase;
+}
+.notification
+{
+   background: url("../images/graphics/body/notificationbg.png") no-repeat;
+   height: 32px;
+   margin: -3px 0 5px -2px;
+   width: 242px;
+}
+.notification p
+{
+   padding: 3px 0 0 40px;
+}
+.notification a
+{
+   float: right;
+   font-size: 7pt;
+   padding: 3px 7px 0 0;
+}
+   /*--- Navigation ---*/
+   #nav
+      {
+      background: url("../images/graphics/body/navbg.png") repeat-x;
+      border-bottom: 1px solid #0b0b0b;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      height: 50px;
+   }
+   #navLinkContainer
+      {
+      /* Elements styled with inline-block show a space between them,
+         so the font size for the parent element is set to zero. This
+         will then be changed inside the child element. */
+      font-size: 0;
+      height: 50px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   #navLinkContainer .navLink
+      {
+      display: inline-block;
+      height: 50px;
+      position: relative;
+   }
+   #navLinkContainer .hoverOverlayRight
+      {
+      position: absolute;
+      right: 1px;
+      opacity: 0.5;
+      visibility: hidden;
+      z-index: 1;
+   }
+   #navLinkContainer .hoverOverlayLeft
+      {
+      left: 1px;
+      position: absolute;
+      opacity: 0.5;
+      visibility: hidden;
+      z-index: 2;
+   }
+   #navLinkContainer ul li
+      {
+      display: inline-block;
+      font-size: 13pt;
+      padding: 18px 30px 0 30px;
+      z-index: 10;
+   }
+   #navLinkContainer .navLink:hover .hoverOverlayLeft, 
+   #navLinkContainer .navLink:hover .hoverOverlayRight
+      {
+      visibility: visible;
+   }
+   #navLinkContainer a:link, 
+   #navLinkContainer a:visited,
+   #navLinkContainer a:active
+      {
+      color: #ffffff;
+      text-decoration: none;
+   }
+   #navLinkContainer .navLink:hover a
+      {
+      text-decoration: underline;
+   }
+   /*--- End Navigation ---*/
+   
+   /*--- Sidebar ---*/
+   #sidebar
+      {
+      margin: 10px 0 10px 9px;
+      width: 250px;
+   }
+   #sidebar .widget
+      {
+      background: #202026;
+      border: 1px solid #0b0b0b;
+      min-height: 75px;
+   }
+   /*--- End Sidebar ---*/
+   
+   /*--- Main Content ---*/
+   #mainContent
+      {
+      min-height: 200px;
+      width: 523px;
+      margin: 10px 9px 10px 0;
+   }
+   #mainContent .widget
+      {
+      background: #202026;
+      border: 1px solid #0b0b0b;
+      min-height: 125px;
+   }
+   #mainContent .widgetContent h2
+      {
+      font-size: 14pt;
+      font-weight: bold;
+      padding: 15px;
+      text-decoration: underline;
+   }
+   #mainContent .widgetContent p
+      {
+      padding: 5px;
+   }
+   #mainContent form
+      {
+      padding: 5px;
+   }
+   #mainContent .inputContainer
+      {
+      padding: 5px;
+   }
+   #mainContent label
+      {
+      display: inline-block;
+      padding: 5px;
+      width: 120px;
+   }
+   #mainContent .input
+      {
+      color: #ffffff;
+      padding: 0 5px 0 5px;
+   }
+   #mainContent .dateInput
+      {
+      width: 215px;
+   }
+   #mainContent table
+      {
+      margin: auto;
+      padding: 10px;
+      position: relative;
+      min-width: 150px;
+   }
+   #mainContent .challengeButton
+      {
+      font-size: 8pt;
+   }
+   #mainContent table tr
+      {
+      position: relative;
+   }
+   #mainContent table td
+      {
+      padding: 5px 10px 5px 10px;
+   }
+   #mainContent table thead td
+      {
+      background: #31313a;
+      border-bottom: 1px solid #27272e;
+      border-left: 1px solid #40404c;
+      border-right: 1px solid #27272e;
+      border-top: 1px solid #40404c;
+   }
+   #mainContent table tbody td
+      {
+      background: #3b3b46;
+      border-bottom: 1px solid #31313a;
+      border-left: 1px solid #484855;
+      border-right: 1px solid #31313a;
+      border-top: 1px solid #484855;
+      font-size: 9pt;
+   }
+   #mainContent table label
+      {
+      width: auto;
+   }
+   #mainContent table .noStyleCell
+      {
+      background: none;
+      border: none;
+      min-width: 80px;
+      padding-left: 0px;
+      padding-right: 5px;
+   }
+   #mainContent table .mainError
+      {
+      display: inline-block;
+      width: 110px;
+   }
+   /*--- End Main Content ---*/
+/*--- End Body ---*/
+
+/*--- Footer ---*/
+#footer
+{
+   display: none;
+}
+/*--- End Footer ---*/
